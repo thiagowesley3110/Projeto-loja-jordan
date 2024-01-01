@@ -117,7 +117,7 @@
     padding: 1em 0 2em 0;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 320px){
     .container__nav{
         font-size: 0.8em;
      }
@@ -144,7 +144,7 @@
     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 620px) {
     .banner__principal{
         background-image: url(img/image-michael-jordan760px.png);
     }
