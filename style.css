@@ -1,119 +1,232 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Space+Grotesk:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Space+Grotesk:wght@500&display=swap");
 
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-    
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
-:root{
-    --font--span:#7CA2F4;
-    --font--dark10:#121214;
-    --font--background:#F3F7FF;
-    --color-branco:#fff;
-    --font-principal: 'Archivo', sans-serif;
+:root {
+  --font--span: #7ca2f4;
+  --font--dark10: #121214;
+  --font--background: #f3f7ff;
+  --color-branco: #fff;
+  --font-principal: "Archivo", sans-serif;
+  --font-secundaria: "Space Grotesk", sans-serif;
 }
 
 /* header/banner  */
 
-.container__nav{
-    font-family: var(--font-principal);
-    font-size: 1.3em;
-    text-align: center;
-    padding: 0.5em 0;
-    font-weight: 500;
+.container__nav {
+  font-family: var(--font-principal);
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0.5em 0;
+  font-weight: 500;
 }
-.banner__principal{
-    width: 100vw;
-    height: 25em;
-    background-image: url(img/image-michael-jordan.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.banner__principal {
+  
+  background-image: url(img/image-michael-jordan.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.descricao__banner{
-    font-family: var(--font-principal);
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    color: var(--color-branco) ;
-    padding: 5.93em 0 0 12em;
+.banner__texto {
+  padding: 6em 20em;
 }
-.descricao__banner h2{
-    font-family: var(--font-principal);
-    font-size: 2em;
+.descricao__banner img {
+  width: 2.4em;
 }
-.descricao__banner span{
-    font-family: var(--font-principal);
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: 33.66px;
+.descricao__banner h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 26.11px;
+  display: flex;
+  align-items: center;
 }
-.descricao__logo{
-    font-family: var(--font-principal);
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    padding-bottom: 0.5em;
+.descricao__banner h2 {
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 34.82px;
+}
+.descricao__banner span {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 33.6px;
+}
+.descricao__banner {
+  width: 550px;
+  height: auto;
+  color: var(--color-branco);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-family: var(--font-principal);
 }
 
 /* conteudo principal/main */
-.secao__principal{
-    padding: 0 10em;
+.secao__principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 3em;
+}
+.descricao__principal {
+  width: 600px;
+}
+.descricao__principal h2 {
+  font-family: var(--font-principal);
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 34.82px;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.descricao__principal h4 {
+  font-family: var(--font-principal);
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 33.6px;
+  padding-bottom: 2em;
+}
+.secao__produtos {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  justify-content: center;
+}
+.produtos img {
+  width: 20em;
+  height: auto;
+  background-color: var(--font--background);
+  padding: 1em 3em;
+}
+.produtos {
+  width:auto;
+}
+.produtos h2 {
+  font-family: var(--font-principal);
+  font-weight: 500;
+  line-height: 23.4px;
+  font-size: 1.12em;
+  padding: 1em 0;
+}
+.produtos span {
+  font-family: var(--font-principal);
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 17.41px;
+  color: var(--font--span);
+}
+.produtos h3 {
+  font-family: var(--font-secundaria);
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 25.52px;
+  padding-top: 1em;
 }
 
-.descricao__principal{
-    text-align: center;
-    padding-top: 5em;
-}
-.descricao__principal h2{
-    font-family: var(--font-principal);
-    font-size: 2em;
-    font-weight: 600;
-    line-height: 34.82px;
-    padding-bottom: 1em;
-}
-.descricao__principal h4{
-    font-family: var(--font-principal);
-    font-size: 1.5em;
-    font-weight: 400;
-    line-height: 33.6px;
-    padding-bottom: 4.5em;
-}
-/* produtos */
-.secao__produtos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-}
-.produtos img{
-    background-color: var(--font--background);
-    padding: 4.96em 8.43em ;
-}
+@media (min-width:320px) and (max-width:870px){
+    .banner__principal{
+        background-image: url(img/image-michael-jordan\ 320px.svg);
+        background-size: cover;
+    }
+    .banner__texto {
+        padding: 10em 1em;
+    }
+    .descricao__banner img {
+        width: 24px;
+        padding-right: 0.5em;
+      }
+      .descricao__banner h1 {
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 19.58px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2em;
+      }
+      .descricao__banner h2 {
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 26.11px;
+      }
+      .descricao__banner span {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 22.4px;
+      }
+      .secao__produtos{
+        width: 90%;
+        gap: 2em;
+      }
+      .produtos{
+        width: 300px;
+      }
+      .produtos img {
+        width: 15em;
+        height: auto;
+        background-color: var(--font--background);
+        padding: 1em 2em;
+      }
+      .descricao__principal{
+        width: 400px;
+      }
+      .descricao__principal h2{
+        font-size: 1.25em;
+        font-weight:600 ;
+        line-height:21.76px;
+      }
+      .descricao__principal h4{
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 19.6px;
+        align-items: center;
 
-.produtos h2{
-    font-weight: 500;
-    font-size: 1.12em;
-    line-height: 23.4px;
-    padding-bottom: 0.5em;
-    font-family: var(--font-principal);
+      }
+    
+    
 }
-.produtos span{
-    font-size: 1em;
-    font-weight: 500;
-    color: var(--font--span);
-    line-height: 17.41px;
-    font-family: var(--font-principal);
+@media  (min-width:870px) and (max-width:1120px){
+    .banner__principal{
+        background-image: url(img/image-michael-jordan760px.png);
+    }
+    .banner__texto {
+        padding: 10em 2em;
+      }
+      .descricao__banner img {
+        width: 1.5em;
+      }
+      .descricao__banner h1 {
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 26.11px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2em;
+      }
+      .descricao__banner h2 {
+        font-weight: 500;
+        font-size: 2em;
+        line-height: 34.82px;
+      }
+      .descricao__banner span {
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 33.6px;
+      }
+      .secao__produtos{
+        width: 90%;
+        gap: 2em;
+      }
+      .produtos{
+        width: 300px;
+      }
+      .produtos img {
+        width: 15em;
+        height: auto;
+        background-color: var(--font--background);
+        padding: 1em 2em;
+      }
 }
-.preco{
-    font-family:  'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 1.25em;
-    line-height: 25.52px;
-    padding: 1em 0 2em 0;
-}
-
